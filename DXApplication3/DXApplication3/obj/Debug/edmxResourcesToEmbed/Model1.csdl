@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SMPModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DB_SMPEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_CAT" EntityType="SMPModel.TB_CAT" />
+    <EntitySet Name="TB_CUS" EntityType="SMPModel.TB_CUS" />
+    <EntitySet Name="TB_PUR" EntityType="SMPModel.TB_PUR" />
+    <EntitySet Name="TB_SELL" EntityType="SMPModel.TB_SELL" />
+    <EntitySet Name="TB_SUP" EntityType="SMPModel.TB_SUP" />
+    <EntitySet Name="TBUSERs" EntityType="SMPModel.TBUSER" />
+    <AssociationSet Name="FK_TB_PUR_TB_CAT" Association="SMPModel.FK_TB_PUR_TB_CAT">
+      <End Role="TB_CAT" EntitySet="TB_CAT" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PUR_TB_SUP" Association="SMPModel.FK_TB_PUR_TB_SUP">
+      <End Role="TB_SUP" EntitySet="TB_SUP" />
+      <End Role="TB_PUR" EntitySet="TB_PUR" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TB_CAT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CAT_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CAT_Cover" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TB_PUR" Relationship="SMPModel.FK_TB_PUR_TB_CAT" FromRole="TB_CAT" ToRole="TB_PUR" />
+  </EntityType>
+  <EntityType Name="TB_CUS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sup_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sup_Phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sup_Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sup_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TB_PUR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cat_id" Type="Int32" />
+    <Property Name="Supp_id" Type="Int32" />
+    <Property Name="Pur_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pur_Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pur_Cat" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pur_Supp" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pur_Det" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pur_Buy" Type="Double" />
+    <Property Name="Pur_Qt" Type="Double" />
+    <Property Name="Pur_Tsell" Type="Double" />
+    <Property Name="Pur_Tbuy" Type="Double" />
+    <Property Name="Pur_TRev" Type="Double" />
+    <Property Name="Purr_Tbuy" Type="Double" />
+    <NavigationProperty Name="TB_CAT" Relationship="SMPModel.FK_TB_PUR_TB_CAT" FromRole="TB_PUR" ToRole="TB_CAT" />
+    <NavigationProperty Name="TB_SUP" Relationship="SMPModel.FK_TB_PUR_TB_SUP" FromRole="TB_PUR" ToRole="TB_SUP" />
+  </EntityType>
+  <EntityType Name="TB_SELL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sell_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sell_Cus" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sell_Price" Type="Double" />
+    <Property Name="Sell_Qt" Type="Double" />
+    <Property Name="Sell_TPrice" Type="Double" />
+    <Property Name="Sell_Date" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="TB_SUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sup_Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sup_Phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sup_Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sup_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TB_PUR" Relationship="SMPModel.FK_TB_PUR_TB_SUP" FromRole="TB_SUP" ToRole="TB_PUR" />
+  </EntityType>
+  <EntityType Name="TBUSER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Passowrd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Rol" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="stt" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_TB_PUR_TB_CAT">
+    <End Role="TB_CAT" Type="SMPModel.TB_CAT" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TB_PUR" Type="SMPModel.TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CAT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="Cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PUR_TB_SUP">
+    <End Role="TB_SUP" Type="SMPModel.TB_SUP" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TB_PUR" Type="SMPModel.TB_PUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_SUP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TB_PUR">
+        <PropertyRef Name="Supp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

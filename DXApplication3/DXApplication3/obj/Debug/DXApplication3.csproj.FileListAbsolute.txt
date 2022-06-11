@@ -1,0 +1,39 @@
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.pdb
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.Form1.resources
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.Properties.Resources.resources
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.csproj.GenerateResource.Cache
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.pdb
+c:\users\hd\documents\visual studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe.licenses
+C:\Users\hd\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\matlab.dll
+C:\Users\hd\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.csprojResolveAssemblyReference.cache
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.pdb
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.Form1.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.Properties.Resources.resources
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.csproj.GenerateResource.Cache
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe.licenses
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.pdb
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe.manifest
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.application
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe.manifest
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.application
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\matlab1.dll
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe.config
+C:\Users\HDMI\Documents\Visual Studio 2010\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.csprojResolveAssemblyReference.cache
+F:\Archift\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe.config
+F:\Archift\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe.manifest
+F:\Archift\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.application
+F:\Archift\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.exe
+F:\Archift\Projects\DXApplication3\DXApplication3\bin\Debug\DXApplication3.pdb
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.csprojResolveAssemblyReference.cache
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.Form1.resources
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.Properties.Resources.resources
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.csproj.GenerateResource.Cache
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe.licenses
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe.manifest
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.application
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.exe
+F:\Archift\Projects\DXApplication3\DXApplication3\obj\Debug\DXApplication3.pdb
